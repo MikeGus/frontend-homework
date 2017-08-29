@@ -12,4 +12,7 @@ QUnit.module('Тестируем функцию rle', function () {
 	QUnit.test('rle работает правильно на строках без повторяющихся символов', function (assert) {
 		assert.strictEqual(rle('ABCDEFGHZ'), 'ABCDEFGHZ');
 	});
+	QUnit.test('rle работает правильно на строках с кириллицей', function (assert) {
+		assert.strictEqual(rle('ААААБББВГДД'), 'А4Б3ВГД2');
+	});
 });
