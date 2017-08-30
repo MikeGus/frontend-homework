@@ -1,6 +1,6 @@
 'use strict';
 const rle = string => {
-	const matchArray = string.match(/([\wа-яА-Я])\1*/ig);
+	const matchArray = string.match(/(.)\1*/ig);
 	if (matchArray === null) {
 		return '';
 	}
