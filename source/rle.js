@@ -6,4 +6,4 @@ const rle = string => {
 	}
 	return matchArray.reduce((retString, item) => 
 		`${retString}${item[0]}${item.length > 1 ? item.length : ''}`, '');
-}
+};
